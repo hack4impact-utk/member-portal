@@ -17,14 +17,13 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Insert project title here",
-  description: "Insert project description here",
+  title: "Member Portal"
 };
 
 type RootLayoutProps = {
   children: ReactNode;
 };
-
+//Create and add Navbar Component here for sticky navigation at the top of the webpage.
 export default function RootLayout({ children }: RootLayoutProps): ReactNode {
   return (
     <html lang="en" className={roboto.variable}>
