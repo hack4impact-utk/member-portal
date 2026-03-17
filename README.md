@@ -32,19 +32,15 @@ Please have the following VSCode extensions installed:
 Create a `.env` file in the root directory of the project and add the following variables:
 
 ```text
-DB_CONNECTION_STRING=
-
-EXAMPLE_ENV_VAR=example-value
-EXAMPLE_ENV_VAR_2=example-value-2
-PRIVATE_ENV_VAR=
-PRIVATE_ENV_VAR_2=
+DATABASE_URL=
+AUTH_DRIZZLE_URL=
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 ```
 
-Please contact leadership to obtain the following:
-
-- DB_CONNECTION_STRING
-- PRIVATE_ENV_VAR
-- PRIVATE_ENV_VAR_2
+Please contact leadership to obtain the private values for these variables.
 
 ### Running the App
 
