@@ -6,7 +6,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 
-export default function FilterMenu() {
+export default function FilterMenu({ onFilter }: any) {
 
     // filter state
     const [year, setYear] = useState("");
@@ -63,7 +63,7 @@ export default function FilterMenu() {
                 <MenuItem
                     onClick={() => {
                         closeMenu();
-                        console.log("Applied Filters:", { year, major });
+                        onFilter({ year, major });
                     }}
                 >
                     Apply Filters

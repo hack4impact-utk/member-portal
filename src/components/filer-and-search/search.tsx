@@ -1,19 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import TextField from "@mui/material/TextField";
 
 //search bar element
-export default function Search(){
+export default function Search({ onSearch }: any){
     
-    const [searchTerm, setSearchTerm] = useState("");
-
     return (
         <TextField
             label="Search"
             variant="outlined"
             size="small"
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => onSearch(e.target.value)}
               sx={{
                 '& .MuiOutlinedInput-root': {
                 borderRadius: '25px',
