@@ -17,7 +17,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Member Portal"
+  title: "Member Portal",
 };
 
 type RootLayoutProps = {

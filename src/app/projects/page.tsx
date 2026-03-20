@@ -1,7 +1,5 @@
-import {ReactNode} from 'react'
+import { ReactNode } from "react";
 
 export default function projects(): ReactNode {
-    return(
-        <a>Create Project Page Here</a>
-    );
+  return <a>Create Project Page Here</a>;
 }
