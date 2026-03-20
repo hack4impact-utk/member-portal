@@ -5,7 +5,7 @@ import {
   text,
   timestamp,
 } from "drizzle-orm/pg-core";
-import { array } from "zod";
+// import { array } from "zod"; can uncomment when the array is used, for now it not being used does allow for pull-requests
 
 export const users = pgTable("user", {
   // Modify Schema as needed. Maybe include bio, github, linkedin?
