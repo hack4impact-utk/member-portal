@@ -17,7 +17,7 @@ export default function members(): ReactNode {
 
       {/* Display current filters and search term for demonstration */}
       <div>
-        <p>Search Term: {searchTerm}</p>
+        <p>Search Term: {searchTerm}</p> {/* Move these to member list later */}
         <p>Year Filter: {filters.year}</p>
         <p>Major Filter: {filters.major}</p>
       </div>
