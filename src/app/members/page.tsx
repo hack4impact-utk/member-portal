@@ -112,7 +112,7 @@ function MemberTable({
             <TableCell sx={{ fontWeight: 600 }}>Name:</TableCell>
             <TableCell sx={{ fontWeight: 600 }}>Year:</TableCell>
             <TableCell sx={{ fontWeight: 600 }}>Major:</TableCell>
-            <TableCell sx={{ fontWeight: 600 }}></TableCell>
+            <TableCell sx={{ fontWeight: 600 }}>Role:</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
