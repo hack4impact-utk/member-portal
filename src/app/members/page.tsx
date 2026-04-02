@@ -130,6 +130,14 @@ function MemberTable({
                 onClick={() => onSelect(member)}
                 selected={selectedId === member.id}
                 sx={{ cursor: "pointer" }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    onSelect(member);
+                  }
+                }}
               >
                 <TableCell>{member.name}</TableCell>
                 <TableCell>{member.graduationYear}</TableCell>
