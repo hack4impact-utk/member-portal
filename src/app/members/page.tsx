@@ -192,7 +192,7 @@ function MemberDetail({ member }: { member: Member | null }) {
 
       {member.github && (
         <Box>
-          <Typography variant="body2" fontWeight={500}>Github:</Typography>
+          <Typography variant="body2" fontWeight={500}>GitHub:</Typography>
           <Link href={member.github} target="_blank" rel="noopener noreferrer" variant="body2" sx={{ wordBreak: 'break-all' }}>
             {member.github}
           </Link>
