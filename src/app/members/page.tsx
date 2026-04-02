@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import {
   Box,
+  Container,
   Typography,
   TextField,
   Button,
@@ -230,12 +231,12 @@ export default function MembersPage() {
   }, [searchQuery]);
 
   return (
-    <Box component="main" sx={{ maxWidth: 'lg', mx: 'auto', py: 4, px: 2 }}>
+    <Container component="main" maxWidth="lg" sx={{ py: 4, px: 2 }}>
       <Stack direction="row" spacing={3}>
         {/* Left: filters + table */}
         <Box sx={{ flex: 1, minWidth: 0 }}>
           <Stack direction="row" spacing={2} sx={{ mb: 2, alignItems: "center" }}>
-            <Button variant="outlined" size="small" color="inherit">
+            <Button variant="outlined" size="small" color="inherit" disabled>
               Filters
             </Button>
             <TextField
@@ -259,6 +260,6 @@ export default function MembersPage() {
           <MemberDetail member={selectedMember} />
         </Box>
       </Stack>
-    </Box>
+    </Container>
   );
 }
