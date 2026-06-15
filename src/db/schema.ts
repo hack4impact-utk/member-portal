@@ -15,6 +15,7 @@ export const users = pgTable("user", {
   name: text("name"),
   email: text("email").unique(),
   emailVerified: timestamp("emailVerified", { mode: "date" }),
+  bio: text("bio"),
   year: integer("year"),
   major: text("major"),
   github: text("github"),
